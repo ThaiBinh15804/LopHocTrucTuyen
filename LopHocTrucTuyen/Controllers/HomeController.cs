@@ -15,7 +15,7 @@ namespace LopHocTrucTuyen.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Anh Khanh dep trai";
 
             return View();
         }
