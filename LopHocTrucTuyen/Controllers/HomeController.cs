@@ -13,18 +13,15 @@ namespace LopHocTrucTuyen.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult HocTap()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ThongTin()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
+
     }
 }

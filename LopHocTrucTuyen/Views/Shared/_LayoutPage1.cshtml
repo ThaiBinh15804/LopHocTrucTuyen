@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Sử dụng link Bootstrap của bạn -->
+    <link href="~/Content/boostrap2/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        /* Footer styling to stay at the bottom */
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Hover cho các mục trong Thanh Điều Hướng (Navbar) */
+        .nav-link {
+            transition: color 0.3s ease; /* Chỉ chuyển đổi màu chữ */
+        }
+
+            .nav-link:hover {
+                color: #ffc107 !important; /* Màu vàng khi hover */
+                text-decoration: none; /* Loại bỏ gạch chân nếu có */
+            }
+
+        /* Hover cho phần nội dung chính trong Trang chủ và Học tập */
+        .main-content:hover p {
+            color: #17a2b8; /* Màu xanh dương khi hover vào nội dung chính */
+            transition: color 0.3s ease; /* Chuyển đổi màu chữ của nội dung */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mb-0">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="~/Content/Images/z5967399194370_df2037acda8a0a7cba384a3b446fc73a.jpg" alt="Logo" width="60" height="60" class="d-inline-block" />
+                <span class="ms-2">Student</span>
+            </a>
+
+            <!-- Navigation Links (Trang chủ, Học tập, Thông tin) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Index">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/HocTap">Học tập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/ThongTin">Thông tin</a>
+                    </li>
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                </form>
+
+                <!-- Icons (Yêu thích, Giỏ hàng, Thông báo, Hồ sơ cá nhân) -->
+                <ul class="navbar-nav ms-3 d-flex align-items-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#"><i class="bi bi-heart text-danger" style="font-size: 1.5rem;"></i></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#"><i class="bi bi-cart text-dark" style="font-size: 1.5rem;"></i></a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#"><i class="bi bi-bell text-warning" style="font-size: 1.5rem;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-person-circle text-secondary" style="font-size: 2rem;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <div class="container-fluid content px-0 mx-0">
+        @RenderBody()
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <!-- Social Media Icons -->
+        <div class="mb-3">
+            <a href="#" class="me-3"><i class="bi bi-facebook text-primary" style="font-size: 2rem;"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-linkedin text-info" style="font-size: 2rem;"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-youtube text-danger" style="font-size: 2rem;"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-github text-dark" style="font-size: 2rem;"></i></a>
+            <a href="#"><i class="bi bi-twitter text-info" style="font-size: 2rem;"></i></a>
+        </div>
+        <!-- Copyright Text -->
+        <div>
+            <p>© 2024 Copyright: Bình - Khánh - Thuận</p>
+        </div>
+    </footer>
+
+    <!-- Thêm Bootstrap JS và các thư viện cần thiết -->
+    <script src="~/Content/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
