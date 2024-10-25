@@ -127,6 +127,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\HinhAnh\Base\bell.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -143,6 +144,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\HinhAnh\Base\education-high-resolution-logo.png" />
+    <Content Include="Content\HinhAnh\Base\fb.jpg" />
+    <Content Include="Content\HinhAnh\Base\github.png" />
+    <Content Include="Content\HinhAnh\Base\linkedin.jpg" />
+    <Content Include="Content\HinhAnh\Base\twitter.png" />
+    <Content Include="Content\HinhAnh\Base\user.png" />
+    <Content Include="Content\HinhAnh\Base\youtube.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -176,6 +184,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\_LayoutGiangVien.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
